@@ -1,0 +1,4 @@
+com\mycompany\src\JakartaRestConfiguration.class
+com\mycompany\src\utils\TestDatabaseQuery.class
+com\mycompany\src\controllers\UsuarioController.class
+com\mycompany\src\utils\DatabaseConnection.class
