@@ -11,10 +11,10 @@ import java.sql.Date;
  * @author User
  */
 public class comentarios {
-    private int id_comentario;
-    private int tarea_id;
-    private String contenido;
-    private Date fecha_creacion;
+    protected int id_comentario;
+    protected int tarea_id;
+    protected String contenido;
+    protected Date fecha_creacion;
 
     public comentarios() {
     }

@@ -1,20 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.src.models;
 
 import java.sql.Date;
 
-/**
- *
- * @author User
- */
+
 public class actividades {
-    private int id_actividad;
-    private String descripcion_actividad;
-    private Date fecha;
-    private int tarea_id;
+    protected int id_actividad;
+    protected String descripcion_actividad;
+    protected Date fecha;
+    protected int tarea_id;
 
     public actividades() {
     }

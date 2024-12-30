@@ -3,11 +3,11 @@ package com.mycompany.src.models;
 import java.sql.Date;
 
 public class Tarea {
-    private int id_tarea;
+    protected int id_tarea;
     private String nombre_tarea;
-    private String descripcion_tarea;
-    private boolean estado_tarea;
-    private Date fecha_vencimiento;
+    protected String descripcion_tarea;
+    protected boolean estado_tarea;
+    protected Date fecha_vencimiento;
     private int id_usuario;
 
     public Tarea() {

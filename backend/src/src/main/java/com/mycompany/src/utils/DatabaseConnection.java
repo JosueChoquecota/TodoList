@@ -1,5 +1,7 @@
 package com.mycompany.src.utils;
 
+import com.mycompany.src.DAO.UsuarioDAO;
+import com.mycompany.src.models.Usuario;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -32,7 +34,7 @@ public class DatabaseConnection {
         return conectar;
     }
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         DatabaseConnection db = new DatabaseConnection();
         Connection conn = db.establecerConexion();
         if (conn != null) {
@@ -40,5 +42,10 @@ public class DatabaseConnection {
         } else {
             System.out.println("No se pudo establecer la conexión");
         }
+        
+        UsuarioDAO dao = new UsuarioDAO();     
+        
+        dao.obtenerUsuarios();
+        
     }
 }

@@ -4,10 +4,6 @@
  */
 package com.mycompany.src.models;
 
-/**
- *
- * @author User
- */
 public class Etiquetas {
     private int id_etiquetas;
     private String nombre_etiquetas;
