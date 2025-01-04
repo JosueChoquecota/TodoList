@@ -1,5 +1,7 @@
 package com.mycompany.src.models;
 
+import java.sql.Date;
+
 public class Usuario {
     protected int id_usuario;
     private String nombre_usuario;
@@ -7,12 +9,13 @@ public class Usuario {
     private String password_usuario;
     private int rol_id;
     private int activo;
+    protected Date fecha_creacion;
     private String apellido_usuario;
     private String telefono;
 
     public Usuario() {
     }
-
+    
     public Usuario(int id_usuario, String nombre_usuario, String email_usuario, String password_usuario, int rol_id, int activo, String apellido_usuario, String telefono) {
         this.id_usuario = id_usuario;
         this.nombre_usuario = nombre_usuario;
@@ -20,6 +23,19 @@ public class Usuario {
         this.password_usuario = password_usuario;
         this.rol_id = rol_id;
         this.activo = activo;
+        this.apellido_usuario = apellido_usuario;
+        this.telefono = telefono;
+    }
+   
+    
+    public Usuario(int id_usuario, String nombre_usuario, String email_usuario, String password_usuario, int rol_id, int activo, Date fecha_creacion, String apellido_usuario, String telefono) {
+        this.id_usuario = id_usuario;
+        this.nombre_usuario = nombre_usuario;
+        this.email_usuario = email_usuario;
+        this.password_usuario = password_usuario;
+        this.rol_id = rol_id;
+        this.activo = activo;
+        this.fecha_creacion = fecha_creacion;
         this.apellido_usuario = apellido_usuario;
         this.telefono = telefono;
     }
@@ -72,6 +88,14 @@ public class Usuario {
         this.activo = activo;
     }
 
+    public Date getFecha_creacion() {
+        return fecha_creacion;
+    }
+
+    public void setFecha_creacion(Date fecha_creacion) {
+        this.fecha_creacion = fecha_creacion;
+    }
+
     public String getApellido_usuario() {
         return apellido_usuario;
     }
@@ -88,17 +112,20 @@ public class Usuario {
         this.telefono = telefono;
     }
 
+
     @Override
     public String toString() {
-        return "Usuario x"
+        return "\nUsuario x"
+                + "\n---------------------"
                 + "\nID_usuario: " + id_usuario
                 + "\nNombre: " +nombre_usuario
                 + "\nApellido: " + apellido_usuario
                 + "\nEmail: " +  email_usuario
                 + "\nContraseña: " + password_usuario
-                + "\n Rol: " + rol_id
+                + "\nRol: " + rol_id
                 + "\nActivo: " + activo
                 + "\nTelefono: " + telefono
+                + "\nFecha De Creacion: " + fecha_creacion
                 ;
     }
     

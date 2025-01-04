@@ -8,6 +8,8 @@ com\mycompany\src\dao\TareaEtiquetaDAO.class
 com\mycompany\src\models\categorias.class
 com\mycompany\src\models\Etiquetas.class
 com\mycompany\src\dao\EtiquetaDAO.class
+com\mycompany\src\dao\TareaDAO.class
+com\mycompany\src\utils\CodigoUtils.class
 com\mycompany\src\models\tarea_etiquetas.class
 com\mycompany\src\utils\TestDatabaseQuery.class
 com\mycompany\src\models\roles.class

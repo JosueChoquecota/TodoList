@@ -2,6 +2,7 @@ package com.mycompany.src.utils;
 
 import com.mycompany.src.DAO.UsuarioDAO;
 import com.mycompany.src.models.Usuario;
+import static java.lang.Math.random;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -35,17 +36,13 @@ public class DatabaseConnection {
     }
     
     public static void main(String[] args) throws SQLException {
-        DatabaseConnection db = new DatabaseConnection();
-        Connection conn = db.establecerConexion();
-        if (conn != null) {
-            System.out.println("Conexión establecida correctamente");
-        } else {
-            System.out.println("No se pudo establecer la conexión");
-        }
+        CodigoUtils random = new CodigoUtils();
+        Usuario usuario = new Usuario(random.generarCodigoRandomUsuario(),"Freddy","AlexFacho@gmail.com","admin132",2,0,"Maquera","983455182");
         
-        UsuarioDAO dao = new UsuarioDAO();     
-        
-        dao.obtenerUsuarios();
+        UsuarioDAO dao = new UsuarioDAO();      
+       
+        dao.crearUsuario(usuario);
+        System.out.println(random.mostrarCodigo());   
         
     }
 }
