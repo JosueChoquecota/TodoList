@@ -68,6 +68,7 @@ public class TareaDAO {
             }
             return tareas;
         }
+        
         public void actualizarTarea(Tarea tarea) throws SQLException {
         try {
 

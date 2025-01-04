@@ -5,18 +5,20 @@ import java.sql.Date;
 
 public class actividades {
     protected int id_actividad;
-    protected String descripcion_actividad;
+    private int id_tarea;
+    private int id_usuario;
+    protected String accion;
     protected Date fecha;
-    protected int tarea_id;
-
+    
     public actividades() {
     }
 
-    public actividades(int id_actividad, String descripcion_actividad, Date fecha, int tarea_id) {
+    public actividades(int id_actividad, int id_tarea, int id_usuario, String accion, Date fecha) {
         this.id_actividad = id_actividad;
-        this.descripcion_actividad = descripcion_actividad;
+        this.id_tarea = id_tarea;
+        this.id_usuario = id_usuario;
+        this.accion = accion;
         this.fecha = fecha;
-        this.tarea_id = tarea_id;
     }
 
     public int getId_actividad() {
@@ -27,12 +29,28 @@ public class actividades {
         this.id_actividad = id_actividad;
     }
 
-    public String getDescripcion_actividad() {
-        return descripcion_actividad;
+    public int getId_tarea() {
+        return id_tarea;
     }
 
-    public void setDescripcion_actividad(String descripcion_actividad) {
-        this.descripcion_actividad = descripcion_actividad;
+    public void setId_tarea(int id_tarea) {
+        this.id_tarea = id_tarea;
+    }
+
+    public int getId_usuario() {
+        return id_usuario;
+    }
+
+    public void setId_usuario(int id_usuario) {
+        this.id_usuario = id_usuario;
+    }
+
+    public String getAccion() {
+        return accion;
+    }
+
+    public void setAccion(String accion) {
+        this.accion = accion;
     }
 
     public Date getFecha() {
@@ -43,13 +61,17 @@ public class actividades {
         this.fecha = fecha;
     }
 
-    public int getTarea_id() {
-        return tarea_id;
+    @Override
+    public String toString() {
+        return "\nActividades-----" 
+                + "\nId_actividad=" + id_actividad 
+                + "\nId_tarea=" + id_tarea 
+                + "\nId_usuario=" + id_usuario 
+                + "\nAccion=" + accion 
+                + "\nFecha=" + fecha ;
     }
-
-    public void setTarea_id(int tarea_id) {
-        this.tarea_id = tarea_id;
-    }
+    
+   
     
     
     

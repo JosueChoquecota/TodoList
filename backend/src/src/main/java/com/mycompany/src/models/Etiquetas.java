@@ -7,7 +7,6 @@ package com.mycompany.src.models;
 public class Etiquetas {
     private int id_etiquetas;
     private String nombre_etiquetas;
-    private String color_etiquetas;
 
     public Etiquetas() {
     }
@@ -15,7 +14,6 @@ public class Etiquetas {
     public Etiquetas(int id_etiquetas, String nombre_etiquetas, String color_etiquetas) {
         this.id_etiquetas = id_etiquetas;
         this.nombre_etiquetas = nombre_etiquetas;
-        this.color_etiquetas = color_etiquetas;
     }
 
     public int getId_etiquetas() {
@@ -34,13 +32,13 @@ public class Etiquetas {
         this.nombre_etiquetas = nombre_etiquetas;
     }
 
-    public String getColor_etiquetas() {
-        return color_etiquetas;
+    @Override
+    public String toString() {
+        return "\nEtiquetas---" 
+                + "\nid_etiquetas = " + id_etiquetas 
+                + "\nnombre_etiquetas = " + nombre_etiquetas ;
     }
 
-    public void setColor_etiquetas(String color_etiquetas) {
-        this.color_etiquetas = color_etiquetas;
-    }
-    
+ 
     
 }
