@@ -11,13 +11,16 @@ package com.mycompany.src.models;
 public class roles {
     private int rol_id;
     private String nombre_rol;
+    private String descripcion_rol;
     
     public roles() {
 
         }
-    public roles(int rol_id, String nombre_rol) {
+
+    public roles(int rol_id, String nombre_rol, String descripcion_rol) {
         this.rol_id = rol_id;
         this.nombre_rol = nombre_rol;
+        this.descripcion_rol = descripcion_rol;
     }
 
     public int getRol_id() {
@@ -35,6 +38,15 @@ public class roles {
     public void setNombre_rol(String nombre_rol) {
         this.nombre_rol = nombre_rol;
     }
+
+    public String getDescripcion_rol() {
+        return descripcion_rol;
+    }
+
+    public void setDescripcion_rol(String descripcion_rol) {
+        this.descripcion_rol = descripcion_rol;
+    }
+   
     
     
 }

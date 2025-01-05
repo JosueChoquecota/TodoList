@@ -13,6 +13,7 @@ com\mycompany\src\utils\CodigoUtils.class
 com\mycompany\src\models\tarea_etiquetas.class
 com\mycompany\src\utils\TestDatabaseQuery.class
 com\mycompany\src\models\roles.class
+com\mycompany\src\dao\RolesDAO.class
 com\mycompany\src\dao\UsuarioDAO.class
 com\mycompany\src\dao\ActividadDAO.class
 com\mycompany\src\models\comentarios.class

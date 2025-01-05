@@ -33,21 +33,40 @@ public class CodigoUtils {
          return codigo;
     }
     public int generarCodigoRandomUsuario() {
-        int random = (int) (Math.random()*9999)+999;
+        int random = (int) (Math.random()*999)+999;
         return random;
     }
     public int generarCodigoRandomComentarios() {
-        int random = (int) (Math.random()*9999)+999;
+        int random = (int) (Math.random()*999)+2999;
         return random;
     }
     public int generarCodigoRandomTarea() {
-        int random = (int) (Math.random()*99999) +9999;
+        int random = (int) (Math.random()*4999) +4999;
         return random;
     }
+    public int generarCodigoRandomEtiqueta() {
+        int random = (int) (Math.random()*1999) +4999;
+        return random;
+    }
+    public int generarCodigoRandomActividades() {
+        int random = (int) (Math.random()*999) +7999;
+        return random;
+    }
+    public int generarCodigoRandomCategoria() {
+        int random = (int) (Math.random()*999) +9999;
+        return random;
+    }
+    public int generarCodigoRandomTarea_Etiqueta() {
+        int random = (int) (Math.random()*9999) +99999;
+        return random;
+    }
+    
     public static void main(String[] args) {
         CodigoUtils random = new CodigoUtils();
         System.out.println("gaaa: " + random.generarCodigoRandomUsuario());
         System.out.println("ya: " + random.generarCodigoRandomComentarios());
         System.out.println("ya: " + random.generarCodigoRandomTarea());
+        
+        System.out.println("");
     }
 }
